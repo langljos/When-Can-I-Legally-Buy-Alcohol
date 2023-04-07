@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="When_Can_I_Legally_Buy_Alcohol.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="When Can I Legally Buy Alcohol?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Enter your birthday." FontSize="Medium" Padding="30,10,30,10"/>
+        <DatePicker x:Name="Age" Margin="32,0,32,0" />
+
+        <Label Text="Enter your country." FontSize="Medium" Padding="30,10,30,10"/>
+        <Picker x:Name="Country" Title="Select a Country" Margin="32,0,32,0"/>
+
+        <Button x:Name="Calculate" Text="Calculate" Margin="32,0,32,0" Clicked="CalculateYears"/>
+
+        <Label x:Name="LegalAge" FontSize="Small" Padding="30,10,30,10" TextColor="IndianRed"/>
+        
+        <Label x:Name="CalculatedTime" FontSize="Medium" Padding="30,10,30,10"/>
+
+    </StackLayout>
+
+</ContentPage>
